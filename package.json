@@ -1,0 +1,28 @@
+{
+  "name": "react-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "express": "^4.16.4",
+    "pg": "^7.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "start:dev": "nodemon src --exec babel-node --presets babel-preset-env",
+    "start": "npm run build & node dist/index.js"
+  },
+  "nodemonConfig": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
